@@ -5,8 +5,10 @@ import { useAppSelector, useAppDispatch } from "../hooks/hooks.js";
 import { useEffect } from "react";
 import { actions as cocktailsActions } from "../store/cocktails/cocktails.js";
 import { DataStatus } from "../enums/enums.js";
-import { Typography } from "@mui/material";
-import Loader from "../components/UI/Loader.js";
+import Loader from "../components/common/Loader.js";
+
+import Error from "../components/common/Error.js";
+import { ErrorMessage } from "../enums/error-messages.js";
 
 function OrdinaryPage() {
   const dispatch = useAppDispatch();
@@ -25,18 +27,7 @@ function OrdinaryPage() {
       {dataStatus === DataStatus.PENDING ? (
         <Loader />
       ) : dataStatus === DataStatus.REJECTED ? (
-        <Box
-          sx={{
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-            height: "50vh",
-          }}
-        >
-          <Typography variant="h6" color="error">
-            Oops, something went wrong. Try again later.
-          </Typography>
-        </Box>
+        <Error message={ErrorMessage.Default} />
       ) : dataStatus === DataStatus.FULFILLED ? (
         <Cards allDrinksData={data} />
       ) : null}
