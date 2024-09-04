@@ -4,7 +4,7 @@ import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 
 import Typography from "@mui/material/Typography";
-import { Cocktail } from "../types/cocktail.type";
+import { Cocktail } from "../types/cocktail.type.js";
 import { CardActionArea } from "@mui/material";
 import NoImage from '../images/NoImage.jpg'
 
