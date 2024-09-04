@@ -1,25 +1,13 @@
-import { useAppSelector, useAppDispatch } from "../hooks/hooks.js";
-import { useEffect } from "react";
-import { actions as cocktailsActions } from "../store/cocktails/cocktails.js";
+import { BrowserRouter } from "react-router-dom";
+import AppRouter from "./AppRouter.js";
+import Header from "./fixed/Header.js";
 
 function App() {
-  const dispatch = useAppDispatch();
-  const { data, dataStatus } = useAppSelector(({ cocktails }) => ({
-    data: cocktails.collection,
-    dataStatus: cocktails.dataStatus,
-  }));
-
-  useEffect(() => {
-    void dispatch(cocktailsActions.loadAll());
-  }, []);
-
   return (
-    <>
-      <div>
-        <h1>{JSON.stringify(dataStatus)}</h1>
-        {/* <h1>{JSON.stringify(data)}</h1> */}
-      </div>
-    </>
+    <BrowserRouter>
+      <Header />
+      <AppRouter />
+    </BrowserRouter>
   );
 }
 
