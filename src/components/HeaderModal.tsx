@@ -6,7 +6,7 @@ import { Dialog } from "@mui/material";
 
 import RoomIcon from "@mui/icons-material/Room";
 import LocalBarIcon from "@mui/icons-material/LocalBar";
-import ModalMap from "./ModalMap";
+import ModalMap from "./common/GoogleMap.js";
 
 export default function HeaderModal() {
   const [open, setOpen] = React.useState(false);
@@ -39,9 +39,9 @@ export default function HeaderModal() {
             id="modal-modal-title"
             variant="h6"
             component="h2"
-            sx={{color: "white", fontStyle: "italic" }}
+            sx={{ color: "white", fontStyle: "italic" }}
           >
-           Good places to visit
+            Good places to visit
           </Typography>
           <ModalMap />
         </Box>
