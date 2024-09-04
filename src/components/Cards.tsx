@@ -1,4 +1,4 @@
-import { Box, Grid2, Pagination, Stack } from "@mui/material";
+import { Box, Pagination, Stack } from "@mui/material";
 import { Cocktail } from "../types/cocktail.type.ts";
 import MediaCardWrapper from "./MediaCardWrapper.tsx";
 import { useState } from "react";
