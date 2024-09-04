@@ -3,9 +3,15 @@ import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
 
 import Typography from "@mui/material/Typography";
-import HeaderModal from "../../components/UI/HeaderModal";
+import HeaderModal from "./HeaderModal.js";
+import { useNavigate } from "react-router-dom";
 
 function Header() {
+  const navigate = useNavigate();
+
+  const onTitleClick = () => {
+    navigate("/");
+  };
   return (
     <Box>
       <AppBar
@@ -29,6 +35,7 @@ function Header() {
           }}
         >
           <Typography
+            onClick={onTitleClick}
             variant="h5"
             noWrap
             component="div"
@@ -39,6 +46,7 @@ function Header() {
                 sm: "block",
                 fontFamily: "Bungee Tint, cursive",
                 fontStyle: "italic",
+                cursor: "pointer",
               },
             }}
           >
