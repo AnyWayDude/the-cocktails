@@ -1,9 +1,11 @@
 import { createSlice } from "@reduxjs/toolkit";
 import { loadAll } from "./actions.js";
 import { DataStatus } from "../../enums/enums.js";
+import { Cocktail } from "../../types/cocktail.type.js";
+
 
 type State = {
-  collection: any;
+  collection: Cocktail[] | undefined;
   dataStatus: DataStatus;
 };
 
