@@ -20,7 +20,7 @@ function Cards({ allDrinksData }: Props) {
 
   const handlePageChange = (
     //<Pagination/> requires it because of type requirements,
-    event: React.ChangeEvent<unknown>,
+    _: React.ChangeEvent<unknown>,
     value: number
   ) => {
     setCurrentPage(value);
