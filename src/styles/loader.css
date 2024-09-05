@@ -51,18 +51,23 @@
 @keyframes change-color {
   0%,
   100% {
-    background: #e6ecff;
+    background: #ffcc4d;
   }
   20% {
-    background: #9966ff;
+    background: #fff766;
   }
   40% {
-    background: #ff6666;
+    background: #bfff66;
   }
   60% {
-    background: #ccff66;
+    background: #66b0ff;
   }
   80% {
-    background: #66ffcc;
+    background: #ff668a;
   }
+}
+
+
+.MuiChip-root {
+  margin-top: 1rem;
 }

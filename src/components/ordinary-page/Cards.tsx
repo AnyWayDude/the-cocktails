@@ -1,6 +1,6 @@
 import { Box, Pagination, Stack } from "@mui/material";
-import { Cocktail } from "../types/cocktail.type.ts";
-import MediaCardWrapper from "./MediaCardWrapper.tsx";
+import { Cocktail } from "../../types/cocktail.type.ts";
+import MediaCardWrapper from "../ordinary-page/MediaCardWrapper.tsx";
 import { useState } from "react";
 
 type Props = {

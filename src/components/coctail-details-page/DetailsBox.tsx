@@ -1,9 +1,9 @@
 import { Box, Chip, Typography } from "@mui/material";
 
-import { CocktailDetails } from "../types/cocktail-details.type";
+import { CocktailDetails } from "../../types/cocktail-details.type.js";
 import DetailsIngredients from "./DetailsIngredients.js";
-import Error from "./common/Error.js";
-import { ErrorMessage } from "../enums/error-messages";
+import Error from "../common/Error.js";
+import { ErrorMessage } from "../../enums/error-messages.js";
 import DetailsTags from "./DetailsTags.js";
 import LiquorIcon from "@mui/icons-material/Liquor";
 
@@ -21,14 +21,11 @@ export default function DetailsBox({ details }: Props) {
       sx={{
         display: "flex",
         justifyContent: "Center",
-        alignItems: "Center",
+        alignItems: "FlexStart",
         mt: 10,
       }}
     >
       <Box sx={{ mr: 2 }}>
-        <Typography variant="h4" gutterBottom>
-          {details.strDrink}
-        </Typography>
         <Box
           component="img"
           src={details.strDrinkThumb}
@@ -38,6 +35,10 @@ export default function DetailsBox({ details }: Props) {
       </Box>
 
       <Box sx={{ width: "50%" }}>
+        <Typography variant="h4" gutterBottom>
+          {details.strDrink}
+        </Typography>
+
         <Typography variant="h6" gutterBottom>
           Category: {details.strCategory}
         </Typography>

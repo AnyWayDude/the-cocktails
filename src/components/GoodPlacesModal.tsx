@@ -8,7 +8,7 @@ import RoomIcon from "@mui/icons-material/Room";
 import LocalBarIcon from "@mui/icons-material/LocalBar";
 import ModalMap from "./common/GoogleMap.js";
 
-export default function HeaderModal() {
+export default function GoodPlacesModal() {
   const [open, setOpen] = React.useState(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);

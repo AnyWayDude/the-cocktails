@@ -14,7 +14,7 @@ const DetailsTags = ({ tags }: TagsProps) => {
       <Typography variant="h6" gutterBottom>
         Tags:
       </Typography>
-      <Stack direction="row" spacing={1} flexWrap="wrap">
+      <Stack direction="row" spacing={1} useFlexGap flexWrap="wrap">
         {tagElements.map((tag) => (
           <Chip
             key={tag}

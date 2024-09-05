@@ -3,7 +3,7 @@ import { useAppDispatch, useAppSelector } from "../hooks/hooks";
 import { useEffect } from "react";
 import { loadCocktailDetails } from "../store/cocktail-details/actions.js";
 
-import DetailsBox from "../components/DetailsBox.js";
+import DetailsBox from "../components/coctail-details-page/DetailsBox.js";
 import { DataStatus } from "../enums/data-status.enum.js";
 import Loader from "../components/common/Loader.js";
 

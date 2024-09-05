@@ -3,7 +3,7 @@ import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
 
 import Typography from "@mui/material/Typography";
-import HeaderModal from "./HeaderModal.js";
+import GoodPlacesModal from "./GoodPlacesModal.js";
 import { useNavigate } from "react-router-dom";
 
 function Header() {
@@ -52,7 +52,7 @@ function Header() {
           >
             Ordinary Drinks
           </Typography>
-          <HeaderModal />
+          <GoodPlacesModal />
         </Toolbar>
       </AppBar>
     </Box>

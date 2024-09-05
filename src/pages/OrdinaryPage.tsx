@@ -1,6 +1,6 @@
 import { Box } from "@mui/material";
-import Cards from "../components/Cards";
-import FullscreenImage from "../components/Hero.js";
+import Cards from "../components/ordinary-page/Cards.js";
+import Hero from "../components/ordinary-page/Hero.js";
 import { useAppSelector, useAppDispatch } from "../hooks/hooks.js";
 import { useEffect } from "react";
 import { actions as cocktailsActions } from "../store/cocktails/cocktails.js";
@@ -23,7 +23,7 @@ function OrdinaryPage() {
 
   return (
     <Box>
-      <FullscreenImage />
+      <Hero />
       {dataStatus === DataStatus.PENDING ? (
         <Loader />
       ) : dataStatus === DataStatus.REJECTED ? (

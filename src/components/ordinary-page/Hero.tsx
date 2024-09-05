@@ -1,5 +1,5 @@
 import { Box, Typography } from "@mui/material";
-import backgroundImage from "../images/Background.jpg";
+import backgroundImage from "../../images/Background.jpg";
 import { useEffect, useState } from "react";
 import KeyboardDoubleArrowDownIcon from "@mui/icons-material/KeyboardDoubleArrowDown";
 
