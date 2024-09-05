@@ -1,0 +1,73 @@
+.loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+}
+
+.loading-color {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin: 3px;
+}
+
+.loading-color:nth-child(1) {
+  animation: grow 1s ease-in-out infinite, change-color 10s ease-in-out infinite;
+}
+
+.loading-color:nth-child(2) {
+  animation: grow 1s ease-in-out 0.15s infinite,
+    change-color 10s ease-in-out 0.15s infinite;
+}
+
+.loading-color:nth-child(3) {
+  animation: grow 1s ease-in-out 0.3s infinite,
+    change-color 10s ease-in-out 0.25s infinite;
+}
+
+.loading-color:nth-child(4) {
+  animation: grow 1s ease-in-out 0.45s infinite,
+    change-color 10s ease-in-out 0.35s infinite;
+}
+
+@keyframes grow {
+  0%,
+  100% {
+    -webkit-transform: scaleY(1);
+    -ms-transform: scaleY(1);
+    -o-transform: scaleY(1);
+    transform: scaleY(1);
+  }
+
+  50% {
+    -webkit-transform: scaleY(1.8);
+    -ms-transform: scaleY(1.8);
+    -o-transform: scaleY(1.8);
+    transform: scaleY(1.8);
+  }
+}
+
+@keyframes change-color {
+  0%,
+  100% {
+    background: #ffcc4d;
+  }
+  20% {
+    background: #fff766;
+  }
+  40% {
+    background: #bfff66;
+  }
+  60% {
+    background: #66b0ff;
+  }
+  80% {
+    background: #ff668a;
+  }
+}
+
+
+.MuiChip-root {
+  margin-top: 1rem;
+}
