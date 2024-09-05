@@ -1,6 +1,6 @@
 import { Routes, Route, Navigate } from "react-router-dom";
 import OrdinaryPage from "../pages/OrdinaryPage";
-import CocktailDetailsPage from "../pages/CoctailDetailsPage";
+import CocktailDetailsPage from "../pages/CocktailDetailsPage";
 
 export default function AppRouter() {
   return (

@@ -1,9 +1,9 @@
 import { useParams } from "react-router-dom";
-import { useAppDispatch, useAppSelector } from "../hooks/hooks";
+import { useAppDispatch, useAppSelector } from "../hooks/hooks.js";
 import { useEffect } from "react";
 import { loadCocktailDetails } from "../store/cocktail-details/actions.js";
 
-import DetailsBox from "../components/coctail-details-page/DetailsBox.js";
+import DetailsBox from "../components/cocktail-details/DetailsBox.js";
 import { DataStatus } from "../enums/data-status.enum.js";
 import Loader from "../components/common/Loader.js";
 

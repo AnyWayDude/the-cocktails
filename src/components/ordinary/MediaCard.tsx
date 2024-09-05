@@ -6,7 +6,7 @@ import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
 import { Cocktail } from "../../types/cocktail.type.js";
 import { CardActionArea } from "@mui/material";
-import NoImage from '../../images/NoImage.jpg'
+import NoImage from '../../images/no-image.jpg'
 
 type Props = {
   cocktail: Cocktail;
